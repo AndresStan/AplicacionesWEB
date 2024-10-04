@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas en HTML</title>
+    <link rel="stylesheet" href="./cssTABLA.css">
+    
+</head>
+<body style="background-color: rgb(124, 141, 141);">
+    <h1>Tablas en HTML</h1>
+     <!--TABLAS EN HTML-->
+    <h2>- Hacer una tabla con "table" y columnas con "td".<br>
+    - Con el atributo "width=x%" dento de "table" se puede modificar el ancho de las columnas.<br>
+    - Si en vez de "td" ponemos "th" se centra y se pone en negrita, pa que este mejor.<br>
+    - (con css se puede modificar el estilo de los bordes de la tabla y demás)</h2>
+    <table width="50%">
+
+        <tr>
+            <th>Nombre</th>
+            <th>Apellidos</th>
+            <th>IES</th>
+        </tr>
+        <tr>
+
+            <td>Alberto</td>
+            <td>Rodriguez</td>
+            <td>IES segundo de Chomon</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Pascual</td>
+            <td>Perez</td>
+            <td>IES segundo de Chomon</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Lidia</td>
+            <td></td>
+            <td>IES segundo de Chomon</td>
+
+        </tr>
+    </table>
+
+    <h1>Tablas personalizadas (ver código para entender)</h1>
+
+    <table style="width: 15%; text-align: center;">
+
+        <tr> <!--th*5 + enter para que lo haga 5 veces; Mientras mantienes alt clickas en donde quieres escribir a la vez-->
+            <th colspan="4">Lunes</th>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <th colspan="2" rowspan="2">Fiesta</th>
+           
+            <td>SOR</td>
+            <td>AO</td>
+
+        </tr>
+        <tr>
+            <td>MOME</td>
+            <td>SI</td>
+        </tr>
+        <tr>
+            <th colspan="3">AWEB</th>
+
+            <td>SR</td>
+
+        </tr>
+
+
+    </table>
+</body>
+</html>

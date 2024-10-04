@@ -1,11 +1,61 @@
-body {background-color: rgb(207, 217, 228);}
-h1, body {text-align: center;}
+body {background-color: rgb(0, 0, 0);}
+h1, body {text-align: center; color: aliceblue;}
 
 table, th, td{ 
     
 width: 20cm;
 height: 1cm;
-border: 1px solid white;
+border: 1px solid rgb(255, 255, 255);
 border-collapse: collapse;
 text-align: center;
+}
+
+
+
+header{
+    display: block;
+    background-color: #000000;
+    width:100%;
+}
+
+header h1{
+    text-transform: uppercase;
+    text-align: left;
+    width:30%;
+    display:inline-block;
+}
+header nav{
+    text-align: right;
+    display:inline-block;
+    width:60%;
+}
+
+header ul{
+    display: inline-block;
+    list-style-type: none;
+    margin: 0.5em auto;
+    text-align: center;
+}
+
+header ul li{
+    display: inline-block;
+}
+
+header ul li a{
+    text-decoration: none;
+    border: solid;
+    border-color: #7D8471;
+    border-radius: 50px;
+    background-color: #7D8471;
+    color: white;
+    padding: 0.3em;
+}
+
+header ul li a:hover{
+    background-color: #B8B799;
+    border-color: #B8B799;
+}
+
+header ul li a:active{
+    padding: 0.2em;
 }
