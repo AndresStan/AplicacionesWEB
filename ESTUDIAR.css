@@ -1,11 +1,13 @@
-body {background-color: rgb(0, 0, 0);}
+body {background-image: url(https://img1.wallspic.com/crops/1/6/0/6/7/176061/176061-ilustracion_de_paisaje_de_manzana-manzana-ilustracion-paisaje_natural-morado-1920x1080.jpg1);}
+
+
 h1, body {text-align: center; color: aliceblue;}
 
 table, th, td{ 
     
 width: 20cm;
 height: 1cm;
-border: 1px solid rgb(255, 255, 255);
+border: 1px solid rgb(230, 21, 21);
 border-collapse: collapse;
 text-align: center;
 }
@@ -47,7 +49,7 @@ header ul li a{
     border-color: #7D8471;
     border-radius: 50px;
     background-color: #7D8471;
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 0.3em;
 }
 
@@ -59,3 +61,137 @@ header ul li a:hover{
 header ul li a:active{
     padding: 0.2em;
 }
+
+/*** ESTILOS BOTÓN SLIDE CLOSE ***/
+.ov-btn-slide-close {
+    background: #fff; /* color de fondo */
+    color: #4741d7; /* color de fuente */
+    border: 2px solid #4741d7; /* tamaño y color de borde */
+    padding: 16px 20px;
+    border-radius: 3px; /* redondear bordes */
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+  }
+  .ov-btn-slide-close:before, .ov-btn-slide-close:after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: -50%;
+    background-color: #4741d7; /* color de fondo hover */
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .ov-btn-slide-close:after {
+    left: 100%;
+  }
+  .ov-btn-slide-close:hover {
+    color: #fff; /* color de fuente hover */
+  }
+  .ov-btn-slide-close:hover:before {
+    left: 0;
+  }
+  .ov-btn-slide-close:hover:after {
+    left: 50%;
+  }
+  body  {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  header {
+    position: relative; /* Posiciona el header como elemento padre */
+    animation: fadeIn 2s; /* Añade una animación de inicio con una duración de 2 segundos */
+  }
+  
+  header {
+    position: relative; /* Posiciona el header como elemento padre */
+    animation: moveHeader 5s infinite; /* Añade una animación de movimiento con una duración de 5 segundos y que se repita infinitamente */
+    background-color: #333; /* Agrega un color de fondo al header */
+    padding: 1em; /* Aumenta el espacio interior del header */
+    border-radius: 10px; /* Agrega un contorno redondeado al header */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Agrega un sombreado al header */
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5); /* Agrega un sombreado al texto del header */
+  }
+  
+  @keyframes moveHeader {
+    0% {
+      transform: translateX(0); /* Mueve el header 0% hacia la izquierda */
+    }
+    50% {
+      transform: translateX(10px); /* Mueve el header 10px hacia la derecha en el 50% del ciclo */
+    }
+    100% {
+      transform: translateX(0); /* Vuelve a mover el header 0% hacia la izquierda al llegar al 100% del ciclo */
+    }
+  }
+  
+  h1 {
+    font-family: 'Montserrat', sans-serif; /* Establece una fuente para el texto del header */
+    font-size: 2em; /* Establece el tamaño del texto del header */
+    color: #fff; /* Establece el color del texto del header */
+    text-align: center; /* Alinea el texto del header al centro */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Agrega un sombreado al texto del header */
+  }
+
+  hr {
+    border: none; /* Elimina el borde por defecto del HR */
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)); /* Agrega un sombreado al HR */
+    background-repeat: repeat-x; /* Repite el sombreado horizontalmente */
+    height: 2px; /* Establece la altura del HR */
+    margin-top: 1em; /* Agrega un espacio entre el texto y el HR */
+    margin-bottom: 1em; /* Agrega un espacio entre el HR y el siguiente elemento */
+  }
+  
+  /* Agrega un estilo a los HR cuando estén sobre un elemento seleccionado */
+  hr.selected {
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.3), rgba(255, 0, 0, 0.3));
+  }
+
+  /* Establece una fuente para todo el texto */
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1em;
+    line-height: 1.4em;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+  }
+  
+  /* Establece un estilo para el texto del header */
+  h1 {
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Establece un estilo para el texto del contenido */
+  p, li, a {
+    font-size: 1.2em;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+  }
+  
+  /* Establece un estilo para los enlaces */
+  a {
+    text-decoration: none;
+    color: #666;
+    transition: color 0.2s;
+  }
+  
+  /* Cambia el color del enlace cuando es hover */
+  a:hover {
+    color: #ffffff;
+  }
+  
+  /* Establece un estilo para los HR cuando estén sobre un elemento seleccionado */
+  hr.selected {
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.3), rgba(255, 0, 0, 0.3));
+  }
+
+  
