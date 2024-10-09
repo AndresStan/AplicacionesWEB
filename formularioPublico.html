@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="cssformularioPublico.css">
+    <style>
+        .message {
+            color: green;
+            font-size: 20px;
+            margin-top: 20px;
+            display: none;
+        }
+    </style>
+</head>
+<body style="text-align: center;">
+ <section>
+    <br><br><br><br>
+    <form id="miFormulario">
+        <fieldset>
+          <br>
+            <label for="nombreya">Escribe tu nombre y apellidos:</label>
+            <input type="text" id="nombreya" name="Nombreya">
+            <br><br> 
+            <label for="correo">Escribe tu correo electronico</label>
+            <input type="email" name="Email" id="correo">
+            <br><br>
+            <label for="comentarios">Comentarios:</label>
+            <textarea name="Comentarios" id="comentarios" rows="6"></textarea>
+            <br><br>
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+    <p id="mensaje" class="message" style="background-color: aliceblue; border-radius: 43cm">¡Formulario enviado!</p>
+ </section>
+
+ <script>
+    // Agregar un evento para el envío del formulario
+    document.getElementById("miFormulario").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevenir que el formulario se envíe de la manera predeterminada
+
+        // Crear un objeto FormData para enviar los datos
+        var formData = new FormData(this);
+        var data = {};
+        formData.forEach((value, key) => {
+            data[key] = value;
+        });
+
+        // Enviar los datos al script de Google Apps
+        fetch("https://script.google.com/macros/s/AKfycbzqo-MCUHoYwCSH1zjBp4pfeEmwgmLgE7n2kaP4pmXqZlVRH71tjVILsCqDFnLBjrAnYQ/exec", {
+            method: "POST",
+            body: JSON.stringify(data),
+            headers: {
+                "Content-Type": "application/json"
+            }
+        })
+        .then(response => {
+            if (response.ok) {
+                document.getElementById("mensaje").style.display = "block"; // Mostrar el mensaje
+            } else {
+                console.error("Error al enviar el formulario");
+            }
+        })
+        .catch(error => {
+            console.error("Error en la conexión:", error);
+        });
+    });
+ </script>
+</body>
+</html>
