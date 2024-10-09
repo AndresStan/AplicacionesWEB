@@ -131,6 +131,34 @@ header ul li a:active{
     }
   }
   
+  .boton {
+    /* Establece las propiedades básicas del botón */
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  .boton[data-animate="rubber-band"] {
+    /* Aplica el efecto de cinta elástica */
+    animation: rubber-band 1s infinite;
+  }
+  
+  @keyframes rubber-band {
+    0%, 100% {
+      transform: scale(1) translateX(0);
+    }
+    50% {
+      transform: scale(1.2) translateX(-10px);
+    }
+  }
+
   h1 {
     font-family: 'Montserrat', sans-serif; /* Establece una fuente para el texto del header */
     font-size: 2em; /* Establece el tamaño del texto del header */
@@ -194,4 +222,60 @@ body {
     background-image: linear-gradient(to right, rgba(255, 0, 0, 0.3), rgba(255, 0, 0, 0.3));
   }
 
+  img[data-animate] {
+    animation: bounce 1s infinite;
+  }
   
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(15px);
+    }
+  }
+  
+  @keyframes flash {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+
+  details {
+    background-color: #ffffff00;
+    border: 1px solid #ff0000;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  summary {
+    font-weight: bold;
+    cursor: pointer;
+  }
+  summary {
+    display: block;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s, box-shadow 0.2s;
+  }
+  
+  summary:hover {
+    background-color: #0056b3;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  summary:focus {
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
