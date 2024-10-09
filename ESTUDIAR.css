@@ -1,7 +1,13 @@
-body {background-image: url(https://img1.wallspic.com/crops/1/6/0/6/7/176061/176061-ilustracion_de_paisaje_de_manzana-manzana-ilustracion-paisaje_natural-morado-1920x1080.jpg1);}
+body {
+  background-size: cover; /* or contain */
+  background-position: center;
+  background-image: url(https://img1.wallspic.com/crops/1/6/0/6/7/176061/176061-ilustracion_de_paisaje_de_manzana-manzana-ilustracion-paisaje_natural-morado-1920x1080.jpg1);}
 
 
 h1, body {text-align: center; color: aliceblue;}
+
+
+
 
 table, th, td{ 
     
