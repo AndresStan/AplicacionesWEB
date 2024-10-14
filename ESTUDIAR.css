@@ -1,4 +1,45 @@
 body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 20px;
+}
+h1, h2 {
+  color: #2c3e50;
+}
+p {
+  margin-bottom: 10px;
+}
+.example {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #543939;
+}
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.grid-item {
+  padding: 20px;
+  background-color: lightcoral;
+  text-align: center;
+}
+.hover-example {
+  width: 100%;
+  height: 50px;
+  background-color: lightgrey;
+  transition: background-color 0.5s;
+}
+.hover-example:hover {
+  background-color: yellow;
+}
+
+body {
   background-size: cover; /* or contain */
   background-position: center;
   background-image: url(https://img1.wallspic.com/crops/1/6/0/6/7/176061/176061-ilustracion_de_paisaje_de_manzana-manzana-ilustracion-paisaje_natural-morado-1920x1080.jpg1);}
@@ -17,6 +58,10 @@ footer {
   
 }
 
+strong, b{
+  color: chartreuse;
+}
+
 /* Ambientated effect */
 footer::before {
   content: "";
@@ -29,7 +74,26 @@ footer::before {
   transform: translateX(-10px) translateY(-107px); /* Offset the overlay */
 }
 
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #555;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
 
+nav a:hover {
+  background-color: #444;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+nav a:active {
+  background-color: #333;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
 
 table, th, td{ 
     

@@ -14,7 +14,8 @@
 
         <nav>
             <ol>
-                <li><a href="#">Inicio -</a></li>
+                <li><a href="index.html">Inicio -</a></li>
+                <li><a target="_blank" href="https://steamcommunity.com/profiles/76561199107490599">Steam Profile -</a></li>
                 <li><a target="_blank" href="formularioPublico.html">Enviar un comentario -</a></li>
                 <li><a target="_blank" href="https://es.wikipedia.org/wiki/Invasi%C3%B3n_rusa_de_Ucrania">Descripcion -</a></li>
                 <li><a target="_blank" href="https://jeffrychaves.com/contacto/">Contacto -</a></li>
@@ -31,7 +32,17 @@
 <body>
    
     <head>
-     
+
+        <nav style="width: 100%; background-color: #333; overflow: hidden; display: flex; justify-content: space-between; align-items: center;">
+            <div style="margin-left: 670px;">
+              <a href="index.html" style="color: white; text-decoration: none; font-size: 18px;">HTML</a>
+            </div>
+            <div style="margin-right: 670px;">
+              <a href="indexcss.html" style="color: white; text-decoration: none; font-size: 18px;">CSS</a>
+            </div>
+          </nav>
+
+     <br>
 
     <h4>Bienvenido a mi documento donde puedes estudiar HTML</h1>
     
@@ -153,19 +164,21 @@
 Para un formulario <b>form</b><br><br>
 Los complementos que pueden tener son:
 <br>
-Legend = Para la leyenda
+<strong>Fieldset</strong> = Para el marco del formulario
 <br>
-input type "radio" = tipo de formulario (radio, checkbox, text)
+<strong>Legend</strong> = Para la leyenda
 <br>
-id = Identificador para el label
+input type<strong>"radio","checkbox"... ></strong> = tipo de formulario (radio, checkbox, text)
 <br>
-label "" = Para texto que tiene que ser igual a id y que saldra al lado del boton
+<strong>id</strong> = Identificador para el label
 <br>
-name = Valor que indica al server el conjunto de radiobuttons, si en un form o fieldset hay solo un name para todos los input de radiobuttons solo se podra clickear uno a no ser que haya mas
+<strong>label</strong> = Para texto que tiene que ser igual a id y que saldra al lado del boton
 <br>
-placeholder = Mensaje que saldra en la casilla de texto antes de que escribas nada por ejemplo: Esribe tu correo
+<strong>name</strong> = Valor que indica al server el conjunto de radiobuttons, si en un form o fieldset hay solo un name para todos los input de radiobuttons solo se podra clickear uno a no ser que haya mas
 <br>
-value = El valor que le llegara al servidor si seleccionamos ese boton 
+<strong>placeholder</strong> = Mensaje que saldra en la casilla de texto antes de que escribas nada por ejemplo: Esribe tu correo
+<br>
+<strong>value</strong> = El valor que le llegara al servidor si seleccionamos ese boton 
 <br>
 <br>
 EJ: <a target="_blank" href="./formularios.html"><button style="color: blue; shape-margin: 0%; background-color: aquamarine;">Formulario Basico</button></a>, <a target="_blank" href="formularios2.html"><button style="color: blue; shape-margin: 0%; background-color: aquamarine;">Formulario Avanzado</button></a>
@@ -173,18 +186,20 @@ EJ: <a target="_blank" href="./formularios.html"><button style="color: blue; sha
 EJERCICIOS:
 <br>
 <br>
-<a target="_blank" href="Ejercicio 1.html"><button style="color: blue; shape-margin: 0%; background-color: aquamarine;" data-animate="rubber-band">Ejercicio 1</button></a>
-<br>
-<br>
-<a target="_blank" href="Ejercicio 2.html"><button style="color: blue; shape-margin: 0%; background-color: aquamarine;" data-animate="rubber-band">Ejercicio 1</button></a>
-<br>
-<br>
-<a target="_blank" href="Ejercicio 3.html"><button style="color: blue; shape-margin: 0%; background-color: aquamarine;" data-animate="rubber-band">Ejercicio 1</button></a>
-<br>
-<br>
-<a target="_blank" href="Ejercicio 4.html"><button style="color: blue; shape-margin: 0%; background-color: aquamarine;" data-animate="rubber-band">Ejercicio 1</button></a>
-<br>
-<br>
+<ul>
+    <li><a target="_blank" href="Ejercicio 1.html"><button style="color: blue; shape-margin: 0%; background-color: aquamarine;" data-animate="rubber-band">Ejercicio 1</button></a></li>
+    <br>
+    <br>
+    <li><a target="_blank" href="Ejercicio 2.html"><button style="color: blue; shape-margin: 0%; background-color: aquamarine;" data-animate="rubber-band">Ejercicio 1</button></a></li>
+    <br>
+    <br>
+    <li><a target="_blank" href="Ejercicio 3.html"><button style="color: blue; shape-margin: 0%; background-color: aquamarine;" data-animate="rubber-band">Ejercicio 1</button></a></li>
+    <br>
+    <br>
+    <li><a target="_blank" href="Ejercicio 4.html"><button style="color: blue; shape-margin: 0%; background-color: aquamarine;" data-animate="rubber-band">Ejercicio 1</button></a></li>
+    <br>
+    <br>
+</ul>
 <hr>
 <nav>
 <h1 style="text-align: left;">Div, Nav y mas</h1>
