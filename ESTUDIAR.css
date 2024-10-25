@@ -4,7 +4,7 @@ body {
   margin: 20px;
 }
 h1, h2 {
-  color: #2c3e50;
+  color: #ffffff;
 }
 p {
   margin-bottom: 10px;
@@ -15,6 +15,14 @@ p {
   margin: 10px 0;
   background-color: #543939;
 }
+
+
+
+
+.MiClase{
+  color: red;
+}
+
 .flex-container {
   display: flex;
   justify-content: space-around;
@@ -306,6 +314,27 @@ body {
   }
 
   div{
-    background-color: #00000061;
+    background-color: #0000002b;
     border-radius: 34px;
+  }
+
+  .caja23{
+
+    
+    padding: 1cm 1cm 1cm 1cm;
+
+  }
+  
+  .caja24{
+
+
+    border: 3px solid rgb(0, 0, 0);
+
+  }
+
+  .caja25:hover{
+
+
+    color: orange;
+
   }
