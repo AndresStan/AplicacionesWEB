@@ -3,224 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ESTUDIAR</title>
-    <link rel="stylesheet" href="./ESTUDIAR.css">
-    <script src="javascript.js"></script>
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-<div>
-    <br>
-    <header>
-        <h2>ANDRÉS STAN</h2>
-
-        <nav>
-            <ol>
-                <li><a href="index.html">Inicio -</a></li>
-                <li><a target="_blank" href="https://steamcommunity.com/profiles/76561199107490599">Steam Profile -</a></li>
-                <li><a target="_blank" href="formularioPublico.html">Enviar un comentario -</a></li>
-                <li><a target="_blank" href="https://es.wikipedia.org/wiki/Invasi%C3%B3n_rusa_de_Ucrania">Descripcion -</a></li>
-                <li><a target="_blank" href="https://jeffrychaves.com/contacto/">Contacto -</a></li>
-                <li><a target="_blank" href="Horario.html">Horario -</a></li>
-                <li><a target="_blank" href="http://moodle.iesch.org/">Moodle -</a></li>
-                <li><a target="_blank" href="https://venice.ai/chat">Venice -</a></li>
-                <li><a target="_blank" href="https://github.com/AndresStan">Andres Stan GitHub -</a></li>
-                <li><a href="mailto:aastan@iesch.org">Enviame un E-mail</a></li>
-            </ol>
-        </nav>
-    </header>
-
+    <title>StanStore Inicio</title>
+    <link rel="stylesheet" href="CSS/css.css"> <!-- Aquí se mantendrá el enlace a tu archivo CSS principal -->
 </head>
 <body>
-   
-    <head>
+    <div class="Cajalogo">
+        <img class="logo" src="Media/logo.png" alt="Logo StanStore">
+    </div>
 
-        <nav style="width: 100%; background-color: #333; overflow: hidden; display: flex; justify-content: space-between; align-items: center;">
-            <div style="margin-left: 670px;">
-              <a href="index.html" style="color: white; text-decoration: none; font-size: 18px;">HTML</a>
+    <div class="BarraNav">
+       <div class="Inicio" style="background-color: rgb(233, 223, 223);"><a href="#">PRODUCTOS</a></div>
+       <div class="Contacto" ><a href="contacto.html">CONTACTO</a></div>
+    </div>
+
+    
+
+    <section class="productos">
+        <!-- Sección de Tazas Personalizadas -->
+        <div class="categoria">
+            <h2>Tazas Personalizadas</h2>
+            <div class="producto">
+                <img src="Media/TazaPersonalidad.png" alt="Taza personalizada">
+                <h3>Diseño personalizado</h3>
+                <p>Precio: 10€</p>
+                <p>Personaliza tu taza con el diseño que más te guste.</p> <br>
+                <button>Comprar</button>
             </div>
-            <div style="margin-right: 670px;">
-              <a href="indexcss.html" style="color: white; text-decoration: none; font-size: 18px;">CSS</a>
-            </div>
-          </nav>
 
-     <br>
-
-    <h4>Bienvenido a mi documento donde puedes estudiar HTML</h1>
-    
-    Este documento esta linkeado a un  <a target="_blank" href="./ESTUDIAR.css"> css</a>
-    <hr>
-    <details>
-        <summary>Click para mostrar Resumen Etiquetas</summary>
-        <iframe src="Etiquetas y sus significados.pdf" frameborder="1" width="1000" height="800"></iframe>
-    </details>
-   
-    <hr>
-    <h4>IMAGENES</h3>
-    Para linkear imagenes se usa <b>img</b>
-    <br><br><br>
-    <img src="data:image/jpeg;base64,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" alt="Texto que pondria si no sale la imagen" data-animate="bounce">
-    <br><br>
-    EJ: <a target="_blank" href="./afotos.html"><button style="color: blue; shape-margin: 0%; background-color: aquamarine;" data-animate="rubber-band">IMAGENES EJEMPLO</button></a>
-    <hr>
-
-
-    <h3>Para tipos de letras fuentes y parrafos (Negrita, Subrayado, parrafos etc..)</h3>
-    Hay muchos tipos <b>de fuentes</b><br><br>
-    
-    Con la <b>i</b> <i>Cursiva/italica</i><br>Con strong <strong>Negrita</strong><br>Para un parrafo <b>p</b> [parrafo] <br> Para una linea horizontal <b>hr</b> <br> Para un tachado <b>del</b> <del>Tachado</del>
-    <br>
-    <br>
-    EJ: <a target="_blank" href="./textosnegritaymas.html"><button style="color: blue; shape-margin: 0%; background-color: aquamarine;" data-animate="rubber-band">TIPOS DE TEXTO</button></a>
-    <hr>
-
-    
-    <h3>Para listas:</h3>
-    Hay muchos tipos de listas <b>li, ol, ul</b><br><br>
-    Para lista ordenada ol para lista sin ordenar ul y para los objetos li
-    <br>
-        EJ: <a target="_blank" href="./listas.html"><button style="color: blue; shape-margin: 0%; background-color: aquamarine; " data-animate="rubber-band">LISTAS</button></a>
-    
-    <br>
-    <br>
-    <hr>
-
-
-    <h3>Tablas</h3>
-    Para hacer tablas hay que añadir la etiqueta <b>Table</b> <br> Para editar una fila es tr y luego td, si quieres juntar a lo largo es colspan y es modo pilar rowspan <br> Si quieres que una casilla este en negrita poner en lugar de td th <br> <br>
-    <center>
-    <table>
-       
-        <tr>
-            <td>Horas:</td>
-            <th>Lunes</td>
-            <th>Martes</td>
-            <th>Miercoles</td>
-            <th>Jueves</td>
-            <th>Viernes</td>
-        </tr>
-
-        <tr> <!--primera hora !-->
-            <td>8:30-9:20</td>
-            <td rowspan="2">AWEB</td>
-            <td>SOR </td>
-            <td rowspan="2">SOR</td>
-            <td rowspan="2">SR</td>
-            <td rowspan="2">SR</td>
-        </tr>
-
-        <tr><!--primera hora !-->
-            <td>9:25-10:20</td>
-            <td>SI</td>
-        </tr>
-
-        <tr><!--segunda hora !-->
-            <td>10:25-11:10</td>
-            <td>SOR</td>
-            <td>SI/SR</td>
-            <td>EIE</td>
-            <td>SOR</td>
-            <td>EIE</td>
-        </tr>
-        
-        <tr><!--terecera hora !-->
-            <td>11:10-11:40</td>
-            <td colspan="5">RECREO</td>
-        </tr>
-
-        <tr><!--cuarta hora !-->
-            <td>11:40-12:30</td>
-            <td>SOR</td>
-            <td rowspan="3">SI/SR</td>
-            <td>EIE</td>
-            <td>SOR</td>
-            <td rowspan="3">AWEB</td>
-        </tr>
-
-        <tr><!--quinta hora !-->
-            <td>12:35-13:25</td>
-            <td>LEP</td>
-
-            <td rowspan="2">AWEB</td>
-            <td rowspan="2">SI</td>
            
-        </tr>
+         
+        </div>
 
-        <tr><!--sexta hora !-->
-            <td>13:30-14:20</td>
-            <td>LEP</td>
-            
-          
-          
-        </tr>
+        <!-- Sección de Sudaderas Personalizadas -->
+        <div class="categoria">
+            <h2>Sudaderas Personalizadas</h2>
+            <div class="producto">
+                <img src="Media/Sudadera.png" alt="Sudadera personalizada">
+                <h3>Sudadera con tu diseño</h3>
+                <p>Precio: 15€</p>
+                <p>Sudadera cómoda con el diseño que elijas o tu nombre.</p>
+                <button>Comprar</button>
+            </div>
 
+           
+        </div>
+    </section>
 
+    <footer>
+        <p>&copy; 2024 StanStore. Todos los derechos reservados.</p>
+    </footer>
     
-    </table>
-    </center>
-    <br><br>
-    EJ: <a target="_blank" href="./tabla.html"><button style="color: blue; shape-margin: 0%; background-color: aquamarine;" data-animate="rubber-band">Tabla</button></a>
 
-<hr>
-<h3>Para formularios:</h3>
-Para un formulario <b>form</b><br><br>
-Los complementos que pueden tener son:
-<br>
-<strong>Fieldset</strong> = Para el marco del formulario
-<br>
-<strong>Legend</strong> = Para la leyenda
-<br>
-input type<strong>"radio","checkbox"... ></strong> = tipo de formulario (radio, checkbox, text)
-<br>
-<strong>id</strong> = Identificador para el label
-<br>
-<strong>label</strong> = Para texto que tiene que ser igual a id y que saldra al lado del boton
-<br>
-<strong>name</strong> = Valor que indica al server el conjunto de radiobuttons, si en un form o fieldset hay solo un name para todos los input de radiobuttons solo se podra clickear uno a no ser que haya mas
-<br>
-<strong>placeholder</strong> = Mensaje que saldra en la casilla de texto antes de que escribas nada por ejemplo: Esribe tu correo
-<br>
-<strong>value</strong> = El valor que le llegara al servidor si seleccionamos ese boton 
-<br>
-<br>
-EJ: <a target="_blank" href="./formularios.html"><button style="color: blue; shape-margin: 0%; background-color: aquamarine;">Formulario Basico</button></a>, <a target="_blank" href="formularios2.html"><button style="color: blue; shape-margin: 0%; background-color: aquamarine;">Formulario Avanzado</button></a>
-<br>
-EJERCICIOS:
-<br>
-<br>
-<ul>
-    <li><a target="_blank" href="Ejercicio 1.html"><button style="color: blue; shape-margin: 0%; background-color: aquamarine;" data-animate="rubber-band">Ejercicio 1</button></a></li>
-    <br>
-    <br>
-    <li><a target="_blank" href="Ejercicio 2.html"><button style="color: blue; shape-margin: 0%; background-color: aquamarine;" data-animate="rubber-band">Ejercicio 1</button></a></li>
-    <br>
-    <br>
-    <li><a target="_blank" href="Ejercicio 3.html"><button style="color: blue; shape-margin: 0%; background-color: aquamarine;" data-animate="rubber-band">Ejercicio 1</button></a></li>
-    <br>
-    <br>
-    <li><a target="_blank" href="Ejercicio 4.html"><button style="color: blue; shape-margin: 0%; background-color: aquamarine;" data-animate="rubber-band">Ejercicio 1</button></a></li>
-    <br>
-    <br>
-</ul>
-<hr>
-<nav>
-<h1 style="text-align: left;">Div, Nav y mas</h1>
-<h2>Para seccionar y ordenar un poco los articulos y etiquetas se usa nav y id</h2>
-<h3>Aqui hay un ejemplo muy bueno usando div, nav, en un blog:</h3>
-<a target="_blank" href="blog.html" class="ov-btn-slide-close">BLOG</a>
-<br>
-<br>
-<br>
-</nav>
-<center>
-<footer>
-
-    <h6>&copy; Andres Stan - 2SMR 2024</h6>
-  
-
-
-</footer>
-</center>
-
-
-</div>
 </body>
 </html>
