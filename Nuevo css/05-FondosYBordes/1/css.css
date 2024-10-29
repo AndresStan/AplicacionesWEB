@@ -1,0 +1,18 @@
+.Cuadrado{
+
+    width: 100px;
+    height: 100px;
+    background-color: #aaa;
+
+}
+
+.Elemento {
+
+    width: 100%;
+    height: 200px;
+    background-color: beige;
+    background-image: url(https://picsum.photos/470/100);
+    background-repeat: no-repeat;
+    background-size: contain;
+    ;
+}
