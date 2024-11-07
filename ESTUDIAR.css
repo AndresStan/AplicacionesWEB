@@ -341,3 +341,53 @@ body {
     color: orange;
 
   }
+
+  #popup-wrapper {
+    position: fixed; /* Posiciona el elemento en relación al viewport */
+    top: 50%; /* Coloca el elemento a la mitad de la altura del viewport */
+    left: 50%; /* Coloca el elemento a la mitad de la anchura del viewport */
+    transform: translate(-50%, -50%); /* Centra el elemento */
+    z-index: 999; /* Establece un nivel de z-index alto para asegurarse de que se muestre por encima de otros elementos */
+  }
+  
+  #popup {
+    background-image: url(https://img.freepik.com/fotos-premium/resumen-fondo-diseno-imagenes-fondos-pantalla-ai-generado_643360-89922.jpg?w=360); /* Color blanco del popup */
+    border-radius: 10px; /* Relleno redondeado */
+    padding: 20px; /* Margen interno */
+    width: 400px; /* Anchura del popup */
+    height: 200px; /* Altura del popup */
+    text-align: center; /* Alinear el contenido en el centro */
+    position: relative; /* Posiciona el contenido en relación al elemento padre */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombreado para el popup */
+  }
+  
+  #popup p {
+
+    color: #ffffff;
+
+  }
+  
+  #btn-accept, #btn-cancel {
+    background-color: #4CAF50; /* Color verde claro */
+    border: none;
+    color: #fff; /* Color blanco del texto */
+    padding: 15px 32px; /* Margen interno de 15px y 32px */
+    text-align: center; /* Alinear el texto en el centro */
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px; /* Tamaño de fuente 16px */
+    margin: 4px 2px; /* Margen de 4px y 2px */
+    cursor: pointer; /* Cursor para indicar que es un enlace */
+  }
+
+  #btn-cancel {
+    background-color: #F44336; /* Color rojo oscuro */
+  }
+
+  #btn-accept:active, #btn-cancel:active {
+    background-color: #3e8e41; /* Color verde oscuro */
+    background-color: rgba(62, 142, 65, 0.8); /* Fondo verde oscuro con un 80% de opacidad */
+    box-shadow: 0 2px #666; /* Sombreado para el botón activo */
+    transform: translateY(4px); /* Desplazar hacia arriba el botón activo */
+  }
+

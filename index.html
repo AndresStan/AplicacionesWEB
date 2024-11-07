@@ -13,7 +13,9 @@
         <h2>ANDRÉS STAN</h2>
 
         <nav>
+            
             <ol>
+                
                 <li><a href="index.html">Inicio</a></li>
                 <li><a target="_blank" href="https://steamcommunity.com/profiles/76561199107490599">Steam Profile</a></li>
                 <li><a target="_blank" href="formularioPublico.html">Enviar un comentario</a></li>
@@ -25,7 +27,11 @@
                 <li><a target="_blank" href="https://github.com/AndresStan">Andres Stan GitHub</a></li>
                 <li><a href="mailto:aastan@iesch.org">Enviame un E-mail</a></li>
             </ol>
+
+       
+            
         </nav>
+
     </header>
 
 </head>
@@ -220,6 +226,38 @@ EJERCICIOS:
 </footer>
 </center>
 
+<div id="popup-wrapper">
+    <div id="popup">
+      <p>Haz una donación para motivar al autor!</p>
+      <button id="btn-accept">Aceptar</button>
+      <button id="btn-cancel">Cancelar</button>
+    </div>
+  </div>
+
+  <script>
+   // Ocultar la ventana emergente al inicio
+document.getElementById("popup-wrapper").style.display = "none";
+
+// Esperar 5 segundos antes de mostrar la ventana emergente
+setTimeout(function() {
+  // Mostrar la ventana emergente
+  document.getElementById("popup-wrapper").style.display = "block";
+
+  // Evento de click en el botón Aceptar
+  document.getElementById("btn-accept").addEventListener("click", function() {
+    // Redireccionar al link deseado
+    window.location.href = "https://donate.stripe.com/aEUbLvc17djW5TGbIJ";
+    // Ocultar la ventana emergente
+    document.getElementById("popup-wrapper").style.display = "none";
+  });
+
+  // Evento de click en el botón Cancelar
+  document.getElementById("btn-cancel").addEventListener("click", function() {
+    // Ocultar la ventana emergente
+    document.getElementById("popup-wrapper").style.display = "none";
+  });
+}, 5000); // 5000 es igual a 5 segundos
+  </script>
 
 </div>
 </body>
