@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEXBOX</title>
+    <style>
+
+        body{
+            background-color: beige;
+            margin: 0;
+            padding: 0;
+        }
+
+        .contenedor{ 
+            
+            border: 1px solid black;
+            background-color: azure;
+            padding: 10px;
+            margin: 0 auto;
+            width: 80%;
+            margin: 0 auto;
+            display: flex; /*Flex se trabaja siempre en el contenedor*/
+            flex-direction: flex;
+            flex-wrap: wrap; 
+            /*justify-content: center; para centrar*/
+            justify-content: space-around; /*para esparcirlo*/
+            height: 10cm;
+            
+        }
+
+        .caja{
+            margin: 10px;
+            border: 1px solid black;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+            width: 120px;
+            height: auto;
+            line-height: 120px;
+            text-align: center;
+        }
+
+        .caja1{
+
+            background-color: aquamarine;
+
+
+        }
+        .caja2{
+
+            background-color: blue;
+
+        }
+
+        .caja3{
+
+            background-color: blueviolet;
+
+        }
+
+        .caja4{
+
+
+            background-color: brown;
+
+        }
+
+      
+    </style>
+</head>
+<body>
+    <h2>Introduccion a FlexBox</h2>
+    <hr>
+    <section class="contenedor">
+        <div class="caja caja1">Caja1</div>
+        <div class="caja caja2">Caja2</div>
+        <div class="caja caja3">Caja3</div>
+        <div class="caja caja4">Caja4</div>
+    </section>
+</body>
+</html>

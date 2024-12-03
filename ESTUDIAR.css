@@ -390,4 +390,39 @@ body {
     box-shadow: 0 2px #666; /* Sombreado para el botón activo */
     transform: translateY(4px); /* Desplazar hacia arriba el botón activo */
   }
+.animacion{
 
+  transition: all 1s;
+
+
+
+}
+
+.animacion:hover{
+
+transform: scale(0.8);
+
+}
+
+.jsbutton{
+
+height: 5cm;
+width: 5cm;
+border: 5px solid rgb(0, 0, 0);
+border-radius: 10cm;
+background-color: orange;
+margin-top: 5cm;
+margin-bottom: 5cm;
+transition: all 2s;
+
+
+}
+
+
+.jsbutton:hover{
+
+  transform: scale(2.5);
+  background-color: red;
+  color: white;
+  
+  }
