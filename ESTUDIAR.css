@@ -393,6 +393,7 @@ body {
 .animacion{
 
   transition: all 1s;
+  cursor:crosshair
 
 
 
@@ -401,7 +402,7 @@ body {
 .animacion:hover{
 
 transform: scale(0.8);
-
+cursor:crosshair
 }
 
 .jsbutton{
@@ -414,6 +415,7 @@ background-color: orange;
 margin-top: 5cm;
 margin-bottom: 5cm;
 transition: all 2s;
+cursor:cell
 
 
 }
@@ -424,5 +426,5 @@ transition: all 2s;
   transform: scale(2.5);
   background-color: red;
   color: white;
-  
+  cursor:crosshair
   }
