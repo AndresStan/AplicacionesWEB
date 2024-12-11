@@ -1,0 +1,430 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 20px;
+}
+h1, h2 {
+  color: #ffffff;
+}
+p {
+  margin-bottom: 10px;
+}
+.example {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #543939;
+}
+
+.caja26{
+  position: absolute;
+  right: 90px;
+}
+
+
+.MiClase{
+  color: red;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.grid-item {
+  padding: 20px;
+  background-color: lightcoral;
+  text-align: center;
+}
+.hover-example {
+  width: 100%;
+  height: 50px;
+  background-color: lightgrey;
+  transition: background-color 0.5s;
+}
+.hover-example:hover {
+  background-color: yellow;
+}
+
+body {
+  background-size: cover; /* or contain */
+  background-position: center;
+  background-image: url(https://img1.wallspic.com/crops/1/6/0/6/7/176061/176061-ilustracion_de_paisaje_de_manzana-manzana-ilustracion-paisaje_natural-morado-1920x1080.jpg1);}
+  
+
+h1, body {
+  text-align: left;
+   color: aliceblue;}
+
+
+/* Base styles */
+footer {
+  background-color: #6c5ce700; /* Base purple color */
+  color: #fff;
+
+  
+}
+
+strong, b{
+  color: chartreuse;
+}
+
+/* Ambientated effect */
+footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(186, 100, 236, 0.466); /* Translucent purple overlay */
+  z-index: -1;
+  filter: blur(10px); /* Soften the edges of the overlay */
+  transform: translateX(-10px) translateY(-107px); /* Offset the overlay */
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #555;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+nav a:hover {
+  background-color: #444;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+nav a:active {
+  background-color: #333;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+table, th, td{ 
+    
+width: 20cm;
+height: 1cm;
+border: 1px solid rgb(230, 21, 21);
+border-collapse: collapse;
+text-align: center;
+}
+
+
+
+header{
+    display: block;
+    background-color: #000000;
+    width:100%;
+}
+
+
+
+header ol{
+    text-align: center;
+ 
+}
+
+header ol li{
+    display: inline-block;
+}
+
+
+
+header ul li a:hover{
+    background-color: #B8B799;
+    border-color: #B8B799;
+}
+
+
+/*** ESTILOS BOTÓN SLIDE CLOSE ***/
+.ov-btn-slide-close {
+    background: #fff; /* color de fondo */
+    color: #4741d7; /* color de fuente */
+    border: 2px solid #4741d7; /* tamaño y color de borde */
+    padding: 16px 20px;
+    border-radius: 3px; /* redondear bordes */
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+  }
+  .ov-btn-slide-close:before, .ov-btn-slide-close:after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: -50%;
+    background-color: #4741d7; /* color de fondo hover */
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .ov-btn-slide-close:after {
+    left: 100%;
+  }
+  .ov-btn-slide-close:hover {
+    color: #fff; /* color de fuente hover */
+  }
+  .ov-btn-slide-close:hover:before {
+    left: 0;
+  }
+  .ov-btn-slide-close:hover:after {
+    left: 50%;
+  }
+  body  {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  header {
+    position: relative; /* Posiciona el header como elemento padre */
+    animation: fadeIn 2s; /* Añade una animación de inicio con una duración de 2 segundos */
+  }
+  
+  header {
+    position: relative; /* Posiciona el header como elemento padre */
+    animation: moveHeader 5s infinite; /* Añade una animación de movimiento con una duración de 5 segundos y que se repita infinitamente */
+    background-color: #333; /* Agrega un color de fondo al header */
+    padding: 1em; /* Aumenta el espacio interior del header */
+    border-radius: 10px; /* Agrega un contorno redondeado al header */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Agrega un sombreado al header */
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5); /* Agrega un sombreado al texto del header */
+  }
+  
+  
+  .boton {
+    /* Establece las propiedades básicas del botón */
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  .boton[data-animate="rubber-band"] {
+    /* Aplica el efecto de cinta elástica */
+    animation: rubber-band 1s infinite;
+  }
+  
+  @keyframes rubber-band {
+    0%, 100% {
+      transform: scale(1) translateX(0);
+    }
+    50% {
+      transform: scale(1.2) translateX(-10px);
+    }
+  }
+
+  h1 {
+    font-family: 'Montserrat', sans-serif; /* Establece una fuente para el texto del header */
+    font-size: 2em; /* Establece el tamaño del texto del header */
+    color: #fff; /* Establece el color del texto del header */
+    text-align: center; /* Alinea el texto del header al centro */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Agrega un sombreado al texto del header */
+  }
+
+  hr {
+    border: none; /* Elimina el borde por defecto del HR */
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)); /* Agrega un sombreado al HR */
+    background-repeat: repeat-x; /* Repite el sombreado horizontalmente */
+    height: 2px; /* Establece la altura del HR */
+    margin-top: 1em; /* Agrega un espacio entre el texto y el HR */
+    margin-bottom: 1em; /* Agrega un espacio entre el HR y el siguiente elemento */
+  }
+  
+  /* Agrega un estilo a los HR cuando estén sobre un elemento seleccionado */
+  hr.selected {
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.3), rgba(255, 0, 0, 0.3));
+  }
+
+  /* Establece una fuente para todo el texto */
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1em;
+    line-height: 1.4em;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+  }
+  
+  /* Establece un estilo para el texto del header */
+  h1 {
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Establece un estilo para el texto del contenido */
+  p, li, a {
+    font-size: 1.2em;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+  }
+  
+  /* Establece un estilo para los enlaces */
+  a {
+    text-decoration: none;
+    color: #666;
+    transition: color 0.2s;
+  }
+  
+  /* Cambia el color del enlace cuando es hover */
+  a:hover {
+    color: #ffffff;
+  }
+  
+  /* Establece un estilo para los HR cuando estén sobre un elemento seleccionado */
+  hr.selected {
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.3), rgba(255, 0, 0, 0.3));
+  }
+
+  img[data-animate] {
+    animation: bounce 1s infinite;
+  }
+  
+  
+
+  details {
+    background-color: #ffffff00;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  summary {
+    font-weight: bold;
+    cursor: pointer;
+  }
+  summary {
+    display: block;
+    padding: 8px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  div{
+    background-color: #0000002b;
+    border-radius: 34px;
+  }
+
+  .caja23{
+
+    
+    padding: 1cm 1cm 1cm 1cm;
+
+  }
+  
+  .caja24{
+
+
+    border: 3px solid rgb(0, 0, 0);
+
+  }
+
+  .caja25:hover{
+
+
+    color: orange;
+
+  }
+
+  #popup-wrapper {
+    position: fixed; /* Posiciona el elemento en relación al viewport */
+    top: 50%; /* Coloca el elemento a la mitad de la altura del viewport */
+    left: 50%; /* Coloca el elemento a la mitad de la anchura del viewport */
+    transform: translate(-50%, -50%); /* Centra el elemento */
+    z-index: 999; /* Establece un nivel de z-index alto para asegurarse de que se muestre por encima de otros elementos */
+  }
+  
+  #popup {
+    background-image: url(https://img.freepik.com/fotos-premium/resumen-fondo-diseno-imagenes-fondos-pantalla-ai-generado_643360-89922.jpg?w=360); /* Color blanco del popup */
+    border-radius: 10px; /* Relleno redondeado */
+    padding: 20px; /* Margen interno */
+    width: 400px; /* Anchura del popup */
+    height: 200px; /* Altura del popup */
+    text-align: center; /* Alinear el contenido en el centro */
+    position: relative; /* Posiciona el contenido en relación al elemento padre */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombreado para el popup */
+  }
+  
+  #popup p {
+
+    color: #ffffff;
+
+  }
+  
+  #btn-accept, #btn-cancel {
+    background-color: #4CAF50; /* Color verde claro */
+    border: none;
+    color: #fff; /* Color blanco del texto */
+    padding: 15px 32px; /* Margen interno de 15px y 32px */
+    text-align: center; /* Alinear el texto en el centro */
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px; /* Tamaño de fuente 16px */
+    margin: 4px 2px; /* Margen de 4px y 2px */
+    cursor: pointer; /* Cursor para indicar que es un enlace */
+  }
+
+  #btn-cancel {
+    background-color: #F44336; /* Color rojo oscuro */
+  }
+
+  #btn-accept:active, #btn-cancel:active {
+    background-color: #3e8e41; /* Color verde oscuro */
+    background-color: rgba(62, 142, 65, 0.8); /* Fondo verde oscuro con un 80% de opacidad */
+    box-shadow: 0 2px #666; /* Sombreado para el botón activo */
+    transform: translateY(4px); /* Desplazar hacia arriba el botón activo */
+  }
+.animacion{
+
+  transition: all 1s;
+  cursor:crosshair
+
+
+
+}
+
+.animacion:hover{
+
+transform: scale(0.8);
+cursor:crosshair
+}
+
+.jsbutton{
+
+height: 5cm;
+width: 5cm;
+border: 5px solid rgb(0, 0, 0);
+border-radius: 10cm;
+background-color: orange;
+margin-top: 5cm;
+margin-bottom: 5cm;
+transition: all 2s;
+cursor:cell
+
+
+}
+
+
+.jsbutton:hover{
+
+  transform: scale(2.5);
+  background-color: red;
+  color: white;
+  cursor:crosshair
+  }

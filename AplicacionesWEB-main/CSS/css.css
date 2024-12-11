@@ -1,0 +1,127 @@
+body {
+    background-color: rgb(233, 223, 223);
+    font-family: Arial, sans-serif;
+}
+
+/* Encabezado y estilos generales */
+header {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Estilos de la Cajalogo */
+.Cajalogo {
+    text-align: center;
+}
+
+.logo {
+    max-width: 10cm;
+    width: 100%;
+    height: 100%;
+}
+
+/* Barra de Navegación */
+.BarraNav {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+}
+
+.BarraNav div {
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+    padding: 8px;
+}
+
+.Inicio, .Contacto {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Estilos de los productos */
+.productos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.categoria {
+    width: 45%;
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.categoria h2 {
+    text-align: center;
+    color: #333;
+}
+
+.producto {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.producto img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 8px;
+}
+
+.producto h3 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.producto p {
+    margin: 5px 0;
+    color: #666;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .categoria {
+        width: 100%;
+    }
+}
+
+footer {
+    background-color: #333; /* Fondo oscuro para contraste */
+    color: white; /* Texto blanco para visibilidad */
+    text-align: center; /* Centrado */
+    padding: 10px 0; /* Espaciado */
+    position: static; /* Fijado en la parte inferior */
+    width: 100%; /* Ocupa todo el ancho */
+    bottom: 0; /* Alineado al fondo de la página */
+    font-size: 0.9em; /* Tamaño del texto un poco más pequeño */
+}
+
+footer p {
+    margin: 0; /* Sin márgenes extra */
+}

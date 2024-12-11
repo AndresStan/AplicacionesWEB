@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    font-family: "Nunito", serif;
+    margin: 0;
+    padding: 0;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 20px;
+}
+
+body{
+    background-color: rgb(187, 187, 141);
+}
+
+.cabecera{
+    background-color: #1b3039;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+}
+
+.cabecera .logo {
+    cursor: pointer;
+}
+
+.cabecera .logo img {
+
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.cabecera .logo img:hover {
+transform: scale(0.8);
+}
+
+.cabecera .nav-links {
+    list-style: none;
+}
+
+.cabecera .nav-links li {
+    display: inline-block;
+    padding: 0 20px;
+    transition: all 0.3s;
+}
+
+.cabecera .nav-links li:hover {
+    transform: scale(0.9);
+}
+
+.cabecera .nav-links a {
+    font-size: 700;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.cabecera .nav-links a:hover {
+
+    color: aqua;
+}
+
+.cabecera .btn button {
+
+    font-weight: 700;
+    color: #1b3039;
+    padding: 9px 25px;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+
+
+.cabecera .btn button:hover {
+
+    transform: scale(0.8);
+    background-color: aqua;
+    color: orange;
+}

@@ -1,0 +1,119 @@
+.calc{
+    border-radius: 10px;
+    display: grid;
+    gap: 10px;
+    background-color: rgb(65, 48, 48);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 3fr;
+}
+
+.cajaCONSOLA {
+    text-align: center;
+    margin: 10px;
+    border: solid 3px black;
+    height: 50px;
+    background-color: rgb(165, 155, 155);
+}
+
+.caja{
+    border-radius: 10px;
+    margin: 10px;
+    border: solid 3px black;
+    height: 50px;
+    background-color: rgb(165, 155, 155);
+}
+
+.caja:hover{
+    margin: 10px;
+    border: solid 5px black;
+    transition: all 0.4s;
+    transform: scale(0.95);
+    height: 50px;
+    
+}
+
+
+
+
+.consola{
+
+    
+    background-color: rgb(255, 255, 255);
+    grid-column: 1/4;
+    
+    
+}
+.igual{
+
+    grid-column: 1/4;
+    background-color: rgb(170, 207, 170);
+
+}
+
+.sumar{
+    background-color: rgb(155, 160, 211);
+
+}
+
+.restar{
+    background-color: rgb(155, 160, 211);
+}
+
+.dividir{
+    background-color: rgb(155, 160, 211);
+}
+
+.multiplicar{
+    background-color: rgb(155, 160, 211);
+}
+
+.cero{
+
+}
+
+.uno{
+
+}
+
+.dos{
+
+}
+
+.tres{ 
+
+}
+
+.cuatro{
+
+}
+
+.cinco{
+
+}
+
+.seis{
+
+}
+
+.siete{
+
+}
+
+.ocho{
+
+}
+
+.nueve{
+
+}
+
+.C{
+    background-color: red;
+}
+
+
+
+
+
+

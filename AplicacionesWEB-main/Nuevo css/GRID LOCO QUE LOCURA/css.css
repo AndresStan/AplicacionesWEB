@@ -1,0 +1,23 @@
+.container {
+    background-color: lightsalmon;
+    border: 3px solid black;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: minmax(300px, 1fr) 1fr 1fr; /* El primer valor afecta a los divs de la primera columna y el segundo valor a los divs de las segundas columnas */
+    grid-template-rows: 100px 50px 100px;
+    gap: 5px
+}
+
+.container div {
+    background-color: lightblue;
+    border: 2px solid #09f;
+    border-radius: 5px;
+}
+
+.item-1 {
+    grid-column: 1/3;
+}
+
+.item-2 {
+
+}

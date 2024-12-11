@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta content="initial-scale=1, shrink-to-fit=no, width=device-width" name="viewport">
+      <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i|Roboto+Mono:300,400,700|Roboto+Slab:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Add Material CSS, replace Bootstrap CSS -->
+    <link href="assets/css/material.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./cssformularioPublico.css">
+    <title>Formulario Publico</title>
+    </head>
+  <body>
+    
+  <div class="container border mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-12 mb-5">
+        <br><br><br><br>
+    </div>
+
+    <div class="col-md-5">
+        <form id="my-google-sheet">
+            <div class="form-group">
+                <label for="Nombre">Nombre</label>
+                <input id="Nombre" type="text" name="Nombre" class="form-control" required>
+                
+            </div>
+            <div class="form-group">
+                <label for="Correo">Correo</label>
+                <input type="email" id="Correo" name="Correo" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="Comentarios">Comentarios</label>
+                <textarea name="Comentarios" id="Comentarios"></textarea>
+            </div>
+     
+
+            <div class="wrapper"><br><br><br><br><br><br>
+                <div class="link_wrapper">
+                    
+                 <a href="#" onclick="SendFormGoogleSheets()" class="btn btn-primary btn-sm">¡Enviar!</a> 
+                  <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.832 268.832">
+                      <path d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z"/>
+                    </svg>
+                  </div>
+                </div><br><br><br>
+                <a target="_blank" href="https://docs.google.com/spreadsheets/d/1E7xw_i0qRX8bU0vvFxypneB7ERwmYC3oDsFwm18Qp9Y/edit?usp=sharing">Ver comentarios</a>
+              </div>
+
+              
+        </form>
+        <div class="form-group mb-5 text-center mt-5">
+         
+        </div>
+    </div>
+
+    <div class="col-md-5">
+        <img src="assets/imgs/Google-Sheets-1.png" alt="" class="img-fluid">
+    </div>
+  </div>
+
+  </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="assets/js/material.min.js"></script>
+    <script>
+      function SendFormGoogleSheets (){
+        $.ajax({
+          url:'https://script.google.com/macros/s/AKfycbywUEUoCOCzYcWtx0SXGPgOJDek2nEtufqw1YAs9eYJVPopAMhsyN2QicVu19jkpdfxww/exec',
+          type:'post',
+          data:$("#my-google-sheet").serializeArray(),
+          success: function(){
+            alert("Comentario Enviado")
+          },
+          error: function(){
+            alert("Error en envio :(")
+          }
+      });
+    }
+    </script>
+
+
+</body>
+</html>
