@@ -61,22 +61,6 @@ function CincoPromedio() {
 }
 
 
-
-
-function MostrarImagen() {
-    // Obtener el elemento <img> y eliminar el atributo hidden
-    const imagen = document.getElementById("imagen");
-    imagen.removeAttribute("hidden");
-  
-    // Mostrar el elemento <img> y establecer un tiempo de duración
-    imagen.style.display = "block";
-    setTimeout(() => {
-      imagen.style.display = "none";
-    }, 500);
-  }
-
-
-
   
 
 
@@ -153,21 +137,46 @@ function MostrarImagen() {
         document.getElementById("consola").innerText = "Es positivo"
     } else if (n === 0) {
         document.getElementById("consola").innerText = "Es neutro"
-    } else {
+    } else if (n < 0){
         document.getElementById("consola").innerText = "Es negativo"
+    } else {
+        document.getElementById("consola").innerText = "Eres gilipollas o que eso no es un numero"
     }
     
  }
 
-
-let frutas = ["ba", "ad", "da", "ca"]
-frutas[2] = "puta"
-
-frutas.sort();
-
-for (let i = 0; i < frutas.length; i++) {
-    console.log("La fruta es " + frutas[i]);
+function cambiarTexto() {
     
+    let texto = prompt("Dime el texto que quieres que aparezca")
+    //El h1 tiene como id consola
+    document.getElementById("consola").innerText = texto
+}
+
+function cambiaColor() {
+    let color = document.getElementById("miColor").value;
+    document.body.style.backgroundColor = color;
+}
+
+function mostrarOcultar() {
+    const texto = document.getElementById("consola");
+    
+    
+    if (texto.style.display === 'none') {
+       
+        texto.style.display = 'block';
+        
+        
+    } else {
+        texto.style.display = 'none';
+    }
 
 }
-console.log("La cantidad de frutas que hay es: " + frutas.length)
+
+function cambiarFondo() {
+    let listaColores = ['red' , 'blue' , 'black' , 'yellow'];
+    let numero = Math.floor(Math.random() * listaColores.length);
+   console.log(numero);
+    document.body.style.background = listaColores[numero];
+    
+    
+}

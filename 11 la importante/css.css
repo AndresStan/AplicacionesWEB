@@ -34,6 +34,7 @@ body {
     color: green;
     background-color: rgb(0, 0, 0);
     text-decoration:double;
+    cursor:cell
 
 }
 
@@ -48,13 +49,14 @@ h1 {
     padding: 0.3cm;
     border: solid 1px red;
     border-radius: 1cm;
-    background-color: aliceblue;
+    background-color: rgb(255, 255, 255);
     grid-column: 1;
     margin-left: 15px;
     width: 700px;
     height: 200px;
     position: fixed;
     text-align: center;
+    
 }
 
 .clear {
@@ -65,19 +67,42 @@ h1 {
     position: fixed;
 
     grid-column: 2/3;
-    
+    transition: all 0.3s ease-in-out;
     top: 300px; /* altura desde el borde superior de la pantalla */
     left: 0px; /* distancia desde el borde izquierdo de la pantalla */
     width: 700px;
     height: 600px;
    
-  }
-  
+    
+   
+}
 
 
 .clear:hover {
 
     background-color: brown;
-    border: solid 2px;
+    border: solid 4px orange;
+    transform: scale(1.025);
 
 }
+
+.clear:focus {
+
+    border: solid 4px orange;
+    transform: scale(0.9);
+    
+
+}
+
+
+.colorr{
+    position: fixed;
+    top: 960px;
+    width: 18cm;
+    left: 45px;
+    height: 2cm;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+
+
